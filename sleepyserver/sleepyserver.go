@@ -13,8 +13,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/evanj/concurrentlimit"
-	"github.com/evanj/concurrentlimit/sleepymemory"
+	"github.com/dangerousvasil/concurrentlimit"
+	"github.com/dangerousvasil/concurrentlimit/sleepymemory"
 	"golang.org/x/net/netutil"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"

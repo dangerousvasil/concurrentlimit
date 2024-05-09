@@ -11,9 +11,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/evanj/concurrentlimit"
-	"github.com/evanj/concurrentlimit/grpclimit"
-	"github.com/evanj/concurrentlimit/sleepymemory"
+	"github.com/dangerousvasil/concurrentlimit"
+	"github.com/dangerousvasil/concurrentlimit/grpclimit"
+	"github.com/dangerousvasil/concurrentlimit/sleepymemory"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/durationpb"

@@ -1,4 +1,4 @@
-module github.com/evanj/concurrentlimit
+module github.com/dangerousvasil/concurrentlimit
 
 go 1.20
 

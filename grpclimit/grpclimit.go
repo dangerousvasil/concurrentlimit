@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/evanj/concurrentlimit"
+	"github.com/dangerousvasil/concurrentlimit"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/keepalive"
