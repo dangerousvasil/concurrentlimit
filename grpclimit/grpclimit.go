@@ -28,6 +28,7 @@ const rateLimitStatus = codes.ResourceExhausted
 // https://cloud.google.com/load-balancing/docs/https#timeouts_and_retries
 const idleConnectionTimeout = 620 * time.Second
 const keepaliveTimeout = time.Minute
+const maxConnectionAge = time.Minute
 
 // NewServer creates a grpc.Server and net.Listener that supports a limited number of concurrent
 // requests. It sets the MaxConcurrentStreams option to the same value, which will cause
@@ -63,6 +64,7 @@ func NewServerWithInterceptors(
 	options = append(options, grpc.KeepaliveParams(keepalive.ServerParameters{
 		MaxConnectionIdle: idleConnectionTimeout,
 		Time:              keepaliveTimeout,
+		MaxConnectionAge:  maxConnectionAge,
 	}))
 	server := grpc.NewServer(options...)
 
